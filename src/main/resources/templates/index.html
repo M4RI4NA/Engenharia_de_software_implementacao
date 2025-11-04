@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1 th:text="${mensagem}">Bem-vindo!</h1>
+
+<form action="/enviar" method="post">
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
